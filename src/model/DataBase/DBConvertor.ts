@@ -1,4 +1,4 @@
-import { IData, ITableMySQL, ITablePGSQL } from './IData'
+import {IData, ITableMySQL, ITablePGSQL, ITableSQLite} from './IData'
 import Entity from '../Schema/Entity'
 import Field from '../Schema/Field'
 import Project from '../Schema/Project'
@@ -91,5 +91,5 @@ export default abstract class DBConvertor {
 
     abstract getPresetKeyOfFieldType(): string
     abstract getPresetKeyOfIncrementMap(): string
-    abstract convertTable(table: ITableMySQL | ITablePGSQL, entity: Entity): void
+    abstract convertTable(table: ITableMySQL | ITablePGSQL | ITableSQLite, entity: Entity): void
 }

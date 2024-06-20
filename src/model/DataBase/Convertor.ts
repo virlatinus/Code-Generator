@@ -2,6 +2,7 @@ import { IData, DriverEnum } from './IData'
 import MySQLConvertor from './MySQLConvertor'
 import PGSQLConvertor from './PGSQLConvertor'
 import Project from '../Schema/Project'
+import SQLiteConvertor from "./SQLiteConvertor";
 
 export default class Convertor {
     readonly preset: Project
@@ -27,6 +28,13 @@ export default class Convertor {
             converter.convert(data)
             return
         }
+
+        if (data.driver === DriverEnum.sqlite) {
+            const converter = new SQLiteConvertor(this.project, this.preset, this.skip)
+            converter.convert(data)
+            return
+        }
+
         throw new Error(`Unsupported driver ${data.driver}`)
     }
 }

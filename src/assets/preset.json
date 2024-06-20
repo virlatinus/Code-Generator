@@ -4680,6 +4680,239 @@
                 }
             },
             {
+                "name": "FieldTypeSQLite",
+                "original": true,
+                "color": "",
+                "description": "SQLite type (tag is FieldType. used to convert SQLite type to Laravel type)",
+                "version": 1,
+                "propertyManager": {
+                    "list": [
+                        {
+                            "name": "bigint",
+                            "data": {},
+                            "tag": "bigInteger",
+                            "value": ""
+                        },
+                        {
+                            "name": "binary",
+                            "data": {},
+                            "tag": "binary",
+                            "value": ""
+                        },
+                        {
+                            "name": "bit",
+                            "data": {},
+                            "tag": "boolean",
+                            "value": ""
+                        },
+                        {
+                            "name": "blob",
+                            "data": {},
+                            "tag": "binary",
+                            "value": ""
+                        },
+                        {
+                            "name": "char",
+                            "data": {},
+                            "tag": "char",
+                            "value": ""
+                        },
+                        {
+                            "name": "date",
+                            "data": {},
+                            "tag": "date",
+                            "value": ""
+                        },
+                        {
+                            "name": "datetime",
+                            "data": {},
+                            "tag": "dateTime",
+                            "value": ""
+                        },
+                        {
+                            "name": "decimal",
+                            "data": {},
+                            "tag": "decimal",
+                            "value": ""
+                        },
+                        {
+                            "name": "double",
+                            "data": {},
+                            "tag": "double",
+                            "value": ""
+                        },
+                        {
+                            "name": "enum",
+                            "data": {},
+                            "tag": "enum",
+                            "value": ""
+                        },
+                        {
+                            "name": "float",
+                            "data": {},
+                            "tag": "float",
+                            "value": ""
+                        },
+                        {
+                            "name": "geometry",
+                            "data": {},
+                            "tag": "geometry",
+                            "value": ""
+                        },
+                        {
+                            "name": "geometrycollection",
+                            "data": {},
+                            "tag": "geometryCollection",
+                            "value": ""
+                        },
+                        {
+                            "name": "int",
+                            "data": {},
+                            "tag": "integer",
+                            "value": ""
+                        },
+                        {
+                            "name": "integer",
+                            "data": {},
+                            "tag": "integer",
+                            "value": ""
+                        },
+                        {
+                            "name": "json",
+                            "data": {},
+                            "tag": "json",
+                            "value": ""
+                        },
+                        {
+                            "name": "linestring",
+                            "data": {},
+                            "tag": "lineString",
+                            "value": ""
+                        },
+                        {
+                            "name": "longblob",
+                            "data": {},
+                            "tag": "binary",
+                            "value": ""
+                        },
+                        {
+                            "name": "longtext",
+                            "data": {},
+                            "tag": "longText",
+                            "value": ""
+                        },
+                        {
+                            "name": "mediumblob",
+                            "data": {},
+                            "tag": "binary",
+                            "value": ""
+                        },
+                        {
+                            "name": "mediumint",
+                            "data": {},
+                            "tag": "mediumInteger",
+                            "value": ""
+                        },
+                        {
+                            "name": "mediumtext",
+                            "data": {},
+                            "tag": "mediumText",
+                            "value": ""
+                        },
+                        {
+                            "name": "multilinestring",
+                            "data": {},
+                            "tag": "multiLineString",
+                            "value": ""
+                        },
+                        {
+                            "name": "multipoint",
+                            "data": {},
+                            "tag": "multiPoint",
+                            "value": ""
+                        },
+                        {
+                            "name": "multipolygon",
+                            "data": {},
+                            "tag": "multiPolygon",
+                            "value": ""
+                        },
+                        {
+                            "name": "point",
+                            "data": {},
+                            "tag": "point",
+                            "value": ""
+                        },
+                        {
+                            "name": "polygon",
+                            "data": {},
+                            "tag": "polygon",
+                            "value": ""
+                        },
+                        {
+                            "name": "set",
+                            "data": {},
+                            "tag": "set",
+                            "value": ""
+                        },
+                        {
+                            "name": "smallint",
+                            "data": {},
+                            "tag": "smallInteger",
+                            "value": ""
+                        },
+                        {
+                            "name": "text",
+                            "data": {},
+                            "tag": "text",
+                            "value": ""
+                        },
+                        {
+                            "name": "time",
+                            "data": {},
+                            "tag": "time",
+                            "value": ""
+                        },
+                        {
+                            "name": "timestamp",
+                            "data": {},
+                            "tag": "timestamp",
+                            "value": ""
+                        },
+                        {
+                            "name": "tinyblob",
+                            "data": {},
+                            "tag": "binary",
+                            "value": ""
+                        },
+                        {
+                            "name": "tinyint",
+                            "data": {},
+                            "tag": "tinyInteger",
+                            "value": ""
+                        },
+                        {
+                            "name": "tinytext",
+                            "data": {},
+                            "tag": "text",
+                            "value": ""
+                        },
+                        {
+                            "name": "varbinary",
+                            "data": {},
+                            "tag": "binary",
+                            "value": ""
+                        },
+                        {
+                            "name": "varchar",
+                            "data": {},
+                            "tag": "string",
+                            "value": ""
+                        }
+                    ]
+                }
+            },
+            {
                 "name": "FieldTypeMySQL",
                 "original": true,
                 "color": "",
@@ -5241,6 +5474,53 @@
                             "name": "timestampTz",
                             "data": {},
                             "tag": "precision",
+                            "value": ""
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "IncrementSQLite",
+                "original": true,
+                "color": "",
+                "description": "increments of SQLite schema",
+                "version": 1,
+                "propertyManager": {
+                    "list": [
+                        {
+                            "name": "bigint",
+                            "data": {},
+                            "tag": "bigIncrements",
+                            "value": ""
+                        },
+                        {
+                            "name": "int",
+                            "data": {},
+                            "tag": "increments",
+                            "value": ""
+                        },
+                        {
+                            "name": "integer",
+                            "data": {},
+                            "tag": "increments",
+                            "value": ""
+                        },
+                        {
+                            "name": "mediumint",
+                            "data": {},
+                            "tag": "mediumIncrements",
+                            "value": ""
+                        },
+                        {
+                            "name": "smallint",
+                            "data": {},
+                            "tag": "smallIncrements",
+                            "value": ""
+                        },
+                        {
+                            "name": "tinyint",
+                            "data": {},
+                            "tag": "tinyIncrements",
                             "value": ""
                         }
                     ]

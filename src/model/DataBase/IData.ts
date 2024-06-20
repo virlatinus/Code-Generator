@@ -1,18 +1,48 @@
 export enum DriverEnum {
     mysql = 'mysql',
     pgsql = 'pgsql',
+    sqlite = 'sqlite',
 }
 
 export interface IData {
     driver: DriverEnum
     database: string
     prefix: string
-    tables: Array<ITableMySQL | ITablePGSQL>
+    tables: Array<ITableMySQL | ITablePGSQL | ITableSQLite>
 }
 
 export interface ITable {
     included: boolean
     name: string
+}
+
+export interface ITableSQLite extends ITable {
+    fields: Array<IFieldSQLite>
+    indexes: Array<IIndexSQLite>
+}
+
+export interface IFieldSQLite {
+    cid: number
+    name: string
+    type: string
+    notnull: number
+    dflt_value: string
+    pk: number
+}
+
+export interface IIndexColumnSQLite {
+    seqno: number
+    cid: number
+    name: string
+}
+
+export interface IIndexSQLite {
+    seq: number
+    name: string
+    unique: number
+    origin: string
+    partial: number
+    columns: Array<IIndexColumnSQLite>
 }
 
 export interface ITableMySQL extends ITable {
